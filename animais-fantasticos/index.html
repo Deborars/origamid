@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <!--font awesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"/>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./main.css">
+
     <title>Animais Fantásticos</title>
   </head>
   <body>
@@ -18,7 +26,7 @@
     </nav>
     <section class="grid-section animais" id="animais">
       <h1 class="titulo">Animais Fantásticos</h1>
-      <ul>
+      <ul class="animais-lista">
         <li>
           <img src="./img/imagem1.jpg" alt="animal 1">
         </li>
@@ -38,62 +46,47 @@
           <img src="./img/imagem6.jpg" alt="animal 6">
         </li>
       </ul>
-    </section>
-    <section class="animais-descricao">
-      <article>
-        <h2>Raposa</h2>
-        <p>
-          As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
-        </p>
-        <p>
-          Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
-        </p>
-        <p>
-          As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
-        </p>
-      </article>
-      <article>
-        <h2>ESQUILO</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat. Accusantium amet repudiandae tempore quam?
-        </p>
-      </article>
-      <article>
-        <h2>URSO</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat. Accusantium amet repudiandae tempore quam?
-        </p>
-      </article>
-      <article>
-        <h2>LOBO</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat.
-          Accusantium amet repudiandae tempore quam?
-        </p>
+      <section class="animais-descricao">
+        <article>
+          <h2>Raposa</h2>
+          <p>
+            As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+          </p>
+          <p>
+            Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+          </p>
+          <p>
+            As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.
+          </p>
         </article>
         <article>
-          <h2>MACACO</h2>
+          <h2>ESQUILO</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa
-            quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat. Accusantium amet repudiandae tempore quam?
+          </p>
+        </article>
+        <article>
+          <h2>URSO</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat. Accusantium amet repudiandae tempore quam?
+          </p>
+        </article>
+        <article>
+          <h2>LOBO</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
           </p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
@@ -102,23 +95,38 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat.
             Accusantium amet repudiandae tempore quam?
           </p>
+          </article>
+          <article>
+            <h2>MACACO</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa
+              quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat.
+              Accusantium amet repudiandae tempore quam?
+            </p>
+          </article>
+        <article>
+          <h2>LEÃO</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat. Accusantium amet repudiandae tempore quam?
+          </p>
         </article>
-      <article>
-        <h2>LEÃO</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium iure blanditiis ex cupiditate. Velit culpa quas nihil pariatur tenetur neque reiciendis harum, dicta cum?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque praesentium nobis modi vero sequi aliquid.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure dignissimos quibusdam illum odit repellat. Accusantium amet repudiandae tempore quam?
-        </p>
-      </article>
+      </section>  
     </section>
     <section class="grid-section faq" id="faq">
-      <h1>FAQ</h1>
-      <dl>
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista">
         <dt>Qual a idade dos animais?</dt>
         <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, delectus.</dd>
 
@@ -133,7 +141,7 @@
       </dl>
     </section>
     <section class="grid-section contato" id="contato">
-      <h1>CONTATO</h1>
+      <h1 class="titulo">CONTATO</h1>
       <div class="mapa">
         <img src="./img/mapa.png" alt="mapa">
       </div>
