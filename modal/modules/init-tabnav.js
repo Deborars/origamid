@@ -9,7 +9,8 @@ function activeTab(index){
   tabContent.forEach((item)=>{
     item.classList.remove("active");
   })
-  tabContent[index].classList.add("active");
+  const direcao = (tabContent[index].dataset.anime);
+  tabContent[index].classList.add("active", direcao);
 }
 
 tabMenu.forEach((itemMenu,index)=>{

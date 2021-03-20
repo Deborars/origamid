@@ -2,7 +2,8 @@
   position: relative;
 }
 
-[data-dropdown] .dropdown-menu {
+[data-dropdown] .dropdown-menu,
+body.active {
   display: none;
 }
 
