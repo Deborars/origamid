@@ -16,5 +16,15 @@ dropDownMenus.forEach((menu)=>{
 function handleClick(event){
   event.preventDefault();
   this.classList.toggle("active");
-  
+  outsideClick(()=>{
+    console.log('ativou');
+  });
+}
+
+function outsideClick(callback){
+  const html = document.documentElement;
+  html.addEventListener("click", handleOutsideClick);
+  function handleOutsideClick(event){
+    callback();
+  }
 }
