@@ -1,0 +1,17 @@
+ul {
+  text-align: center;
+  li {
+    list-style: none;
+    display: inline-block;
+    a {
+      padding: 20px;
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: yellowgreen;
+      &:hover {
+        background-color: yellow;
+      }
+    }
+  }
+}
