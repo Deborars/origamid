@@ -1,0 +1,10 @@
+@import "colors.scss";
+
+$preto: #999;
+
+div {
+  background-color: $preto;
+  a {
+    color: pink;
+  }
+}
