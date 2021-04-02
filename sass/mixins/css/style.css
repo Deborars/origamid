@@ -1,0 +1,19 @@
+h1 {
+  font-size: 4em;
+  line-height: 1;
+  font-weight: bold;
+  font-family: monospace;
+  background-color: palevioletred;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5), 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5), 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5), 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 14px;
+    color: #030303;
+  }
+}
