@@ -1,3 +1,56 @@
+$tema: oceano;
+$primary-color: black;
+$secondary-color: gray;
+
+@if $tema == oceano {
+  $primary-color: blue;
+  $secondary-color: orange;
+} @else if $tema==deserto {
+  $primary-color: yellow;
+  $secondary-color: purple;
+}
+
+@mixin device($device) {
+  @if $device==m {
+    @media (max-width: 300px) {
+      @content;
+    }
+  } @else if($device==t) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if($device==s) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+}
+
+div {
+  font-size: 1.5em;
+
+  @include device(t) {
+    font-size: 1.2em;
+  }
+  @include device(m) {
+    font-size: 10em;
+  }
+}
+
+p {
+  color: $primary-color;
+  background-color: $secondary-color;
+}
+
+$roxo: #8844ee;
+a {
+  background-color: $roxo;
+  color: white;
+  &:hover {
+    background: lighten($roxo, 20%);
+  }
+}
+
 @mixin title-large {
   font-size: 4em;
   line-height: 1;
