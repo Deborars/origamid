@@ -1,3 +1,31 @@
+@for $i from 1 through 4 {
+  .item-#{$i} {
+    width: 100px * $i;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: lightseagreen;
+  }
+}
+
+$colunas: 16;
+$gutter: 20;
+$container: 960;
+
+@for $i from 1 through $colunas {
+  $width: $container/$colunas * $i - $gutter;
+  .item-#{$i} {
+    width: $width + px;
+  }
+}
+
+$lista: facebook twitter pinterest;
+$i: 1;
+@each $item in $lista {
+  .#{$item}-icon {
+    background-image: url("../#{$item}.png");
+  }
+}
+
 $tema: oceano;
 $primary-color: black;
 $secondary-color: gray;

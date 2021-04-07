@@ -1,3 +1,107 @@
+.item-1 {
+  width: 100px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
+}
+
+.item-2 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
+}
+
+.item-3 {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
+}
+
+.item-4 {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
+}
+
+.item-1 {
+  width: 40px;
+}
+
+.item-2 {
+  width: 100px;
+}
+
+.item-3 {
+  width: 160px;
+}
+
+.item-4 {
+  width: 220px;
+}
+
+.item-5 {
+  width: 280px;
+}
+
+.item-6 {
+  width: 340px;
+}
+
+.item-7 {
+  width: 400px;
+}
+
+.item-8 {
+  width: 460px;
+}
+
+.item-9 {
+  width: 520px;
+}
+
+.item-10 {
+  width: 580px;
+}
+
+.item-11 {
+  width: 640px;
+}
+
+.item-12 {
+  width: 700px;
+}
+
+.item-13 {
+  width: 760px;
+}
+
+.item-14 {
+  width: 820px;
+}
+
+.item-15 {
+  width: 880px;
+}
+
+.item-16 {
+  width: 940px;
+}
+
+.facebook-icon {
+  background-image: url("../facebook.png");
+}
+
+.twitter-icon {
+  background-image: url("../twitter.png");
+}
+
+.pinterest-icon {
+  background-image: url("../pinterest.png");
+}
+
 div {
   font-size: 1.5em;
 }
@@ -37,8 +141,10 @@ h1 {
   text-align: center;
   color: white;
   box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5), 5px 5px 0 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5), 5px 5px 0 0 rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5), 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5),
+    5px 5px 0 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5),
+    5px 5px 0 0 rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 600px) {
