@@ -7,25 +7,24 @@ p {
   font-family: 1.2rem;
   font-family: Arial;
   list-style: none;
-  color: #5b5b5b;
+  color: #af7a6d;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #e2d4ba;
   font-weight: bold;
 }
 
 h1 {
   text-align: center;
-  color: #5b5b5b;
+  color: #af7a6d;
   margin-top: 100px;
 }
 
 img {
   display: block;
   max-width: 100%;
-  border-radius: 10px;
 }
 
 .header,
@@ -35,41 +34,90 @@ img {
   padding: 20px;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #7ca6a6;
-}
-
-.footer {
-  justify-content: center;
-}
-
-.menu {
-  display: flex;
+  background-color: #653239;
 }
 
 .menu li {
+  display: inline-block;
   margin-left: 10px;
 }
 
 .menu li a {
-  display: block;
+  display: inline-block;
   padding: 10px;
-
-  border-radius: 10px;
   cursor: pointer;
 }
 
 .menu li a:hover {
-  color: rgba(255, 255, 255, 0.699);
+  color: #af7a6d;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
+.footer {
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.flex > div {
-  flex: 1 1 200px;
-  margin: 10px;
+.grid1 > div:nth-child(n + 4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.grid1 > div.anuncio {
+  border-top: 8px solid #af7a6d;
+  grid-column: 1;
+  grid-row: 2 / 5;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .grid1 {
+    margin: 0 10px;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    background-color: white;
+    height: 2px;
+    width: 15px;
+    position: relative;
+  }
+  .menu-mobile::after,
+  .menu-mobile::before {
+    content: "";
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+  }
+
+  .menu-mobile::before {
+    top: -8px;
+  }
+  .menu-mobile::after {
+    bottom: -8px;
+  }
+}
+@media (max-width: 600px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px;
+  }
+  .grid1 > div:nth-child(n + 4) {
+    display: block;
+  }
+  .grid1 > div.anuncio {
+    grid-row: auto;
+    grid-column: auto;
+    order: -1;
+  }
 }
