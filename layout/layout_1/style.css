@@ -12,7 +12,8 @@ p {
 
 a {
   text-decoration: none;
-  color: #ebebd3;
+  color: white;
+  font-weight: bold;
 }
 
 h1 {
@@ -27,13 +28,18 @@ img {
   border-radius: 10px;
 }
 
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #3a72b7;
+  background-color: #7ca6a6;
+}
+
+.footer {
+  justify-content: center;
 }
 
 .menu {
@@ -47,13 +53,13 @@ img {
 .menu li a {
   display: block;
   padding: 10px;
-  background: #4987d3;
+
   border-radius: 10px;
   cursor: pointer;
 }
 
 .menu li a:hover {
-  background: #2f68ad;
+  color: rgba(255, 255, 255, 0.699);
 }
 
 .flex {
