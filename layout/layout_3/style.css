@@ -1,0 +1,90 @@
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 1.2rem;
+  font-family: Arial;
+  list-style: none;
+  color: #619b8a;
+}
+
+a {
+  text-decoration: none;
+  color: #233d4d;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #619b8a;
+  margin-top: 100px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fe7f2d;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer p {
+  text-align: center;
+  width: 100%;
+  color: #233d4d;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 10px;
+}
+
+.grid > .sidebar {
+  height: 400px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
