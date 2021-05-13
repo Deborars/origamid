@@ -1,0 +1,6 @@
+//cores para o site
+  color: #6c584c;/*principal*/
+  color:#ADC178;/*botão*/
+  color: #f0ead2;/*font*/
+  color: #dde5b6;/*font*/
+  color:#A98467;/*principal*/
