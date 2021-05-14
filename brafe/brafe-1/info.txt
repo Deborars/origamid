@@ -3,4 +3,5 @@
   color:#ADC178;/*botão*/
   color: #f0ead2;/*font*/
   color: #dde5b6;/*font*/
+  color: #4e3c30;/*paragrafo*/
   color:#A98467;/*principal*/
