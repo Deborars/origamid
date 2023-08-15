@@ -26,7 +26,9 @@ function Pessoa(nome, idade){
 
 }
 
-
+const João = new Pessoa("João", "20 anos");
+const Maria = new Pessoa("Maria", "25 anos");
+const Bruno = new Pessoa("Bruno", "15 anos");
 
 // Crie 3 pessoas, João - 20 anos,
 // Maria - 25 anos, Bruno - 15 anos
@@ -41,4 +43,13 @@ function Pessoa(nome, idade){
 // removeClass(classe), remove a classe a todos os elementos
 
 
+var listaProdutos = ["geladeira", "fogão", "coifa" ];
+var listaEmMaiuscula = listaProdutos.map(primeiraEmMaiuscula);
+console.log("Array original: "+listaProdutos);
+console.log("Array retornada pelo método map() :"+ listaEmMaiuscula);
+
+function primeiraEmMaiuscula(elemento){
+    return elemento.charAt(0).toUpperCase()+elemento.slice(1);
+  // return elemento.chartAt(0).toUpperCase()+elemento.slice(1);
+}
 

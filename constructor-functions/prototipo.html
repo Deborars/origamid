@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <ul>
+    <li>Oiii</li>
+  </ul>
+
+  <script>
+    // function Pessoa(nome, idade) {
+    //   this.nome = nome;
+    //   this.idade = idade;
+    // }
+
+    // const debora = new Pessoa('Debora', 34);
+
+    // Pessoa.prototype = function andar() {
+    //   return "Pessoa andou";
+    // }
+
+    // document.write(Pessoa.prototype);
+    // document.write(debora.prototype);
+    // document.write("debora".fixed())
+
+    function Pessoa(nome, sobrenome, idade) {
+      this.nome = nome;
+      this.sobrenome = sobrenome;
+      this.idade = idade;
+    }
+
+    Pessoa.prototype.nomecompleto = function () {
+      return `${this.nome} ${this.sobrenome}`;
+    }
+
+    let debora = new Pessoa('Debora', 'Rosado', 34);
+    console.log(debora.nomecompleto());
+
+    console.log(NodeList.prototype)
+    console.log(HTMLCollection.prototype)
+    console.log(document.prototype)
+
+    const li = document.querySelector('li')
+
+    console.log(li.constructor.name);
+    console.log(li.click.constructor.name);
+    console.log(li.innerText.constructor.name);
+    console.log(li.value.constructor.name);
+    console.log(li.hidden.constructor.name);
+    console.log(li.offsetLeft.constructor.name);
+    console.log(li.click.constructor.name);
+
+  </script>
+</body>
+
+</html>

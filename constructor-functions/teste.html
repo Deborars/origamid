@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form method="post">
+    <input type="checkbox" id="chkGeladeira" value="Geladeira">Geladeira<br>
+    <input type="checkbox" id="chkFogão" value="Fogão">Fogão<br>
+    <input type="checkbox" id="chkCoifa" value="Coifa">Coifa<br>
+    <input type="button" id="btnSubmit" onclick="exibirSelecionados()" value="Exibir Itens Selecionados"><br>
+  </form>
+  <p id="resultado"></p>
+  <script type="text/javascript">
+    function exibirSelecionados() {
+      var elementos = document.querySelectorAll('input[type=checkbox]:checked');
+      var itensSelecionados = [].map.call(elementos, elemento => {
+        console.log(elementos);
+        // return elemento.value;
+      })
+      document.getElementById("resultado").innerHTML = "Você selecionou: " + itensSelecionados;
+    }
+  </script>
+</body>
+
+</html>
