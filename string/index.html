@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // Utilizando o foreach na array abaixo,
+    // some os valores de Taxa e os valores de Recebimento
+
+    const transacoes = [
+      {
+        descricao: 'Taxa do Pão',
+        valor: 'R$ 39',
+      },
+      {
+        descricao: 'Taxa do Mercado',
+        valor: 'R$ 129',
+      },
+      {
+        descricao: 'Recebimento de Cliente',
+        valor: 'R$ 99',
+      },
+      {
+        descricao: 'Taxa do Banco',
+        valor: 'R$ 129',
+      },
+      {
+        descricao: 'Recebimento de Cliente',
+        valor: 'R$ 49',
+      },
+    ];
+
+    let totalTaxas = 0;
+    let totalRecebimentos = 0;
+
+    transacoes.map((e) => {
+      //limpei o valor para não aparecer o cifrao e o tipo virar int
+      let valor = parseFloat(e.valor.replace('R$ ', ''))
+      if (e.descricao.includes('Taxa')) {
+        totalTaxas += valor;
+      }
+
+      if (e.descricao.includes('Recebimento')) {
+        totalRecebimentos += valor;
+      }
+
+    });
+
+
+    const retorno = `O total de taxas foi de R$${totalTaxas} e o total de recebimentos foi de R$${totalRecebimentos}`;
+    console.log(retorno);
+
+    // const initialValue = 0;
+    // const sumWithInitial = valoresEmArray.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+
+    // // console.log(sumWithInitial);
+
+    // // Retorne uma array com a lista abaixo
+    // const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
+
+    // const transportesArray = transportes.split(";");
+    // console.log(transportesArray);
+
+    // // Retorne o último caracter da frase
+    // const frase = 'Melhor do ano!';
+
+    // // console.log(frase[frase.length - 1]);
+
+    // Substitua todos os span's por a's
+    let html = `<ul>
+                <li><span>Sobre</span></li>
+                <li><span>Produtos</span></li>
+                <li><span>Contato</span></li>
+              </ul>`;
+
+    html = html.split("span").join("a");
+    console.log(html);
+
+    const event = new Date();
+
+    // British English uses day-month-year order and 24-hour time without AM/PM
+    console.log(event.toLocaleString("en-US"));
+    // Expected output: "20/12/2012, 03:00:00"
+
+    // Korean uses year-month-day order and 12-hour time with AM/PM
+    console.log(event.toLocaleString('ko-KR', { timeZone: 'UTC' }));
+
+  </script>
+</body>
+
+</html>

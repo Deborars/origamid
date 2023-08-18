@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Retorne um número aleatório
+    // entre 1050 e 2000
+    let numeroAleatorio = (Math.random() * (2000 - 1050 + 1)) + 1050;
+    console.log(Math.round(numeroAleatorio));
+
+    // Retorne o maior número da lista abaixo
+    const numeros = '4, 5, 20, 8, 9';
+    let n = numeros.split(",").map(e => parseInt(e))
+    console.log(Math.max(...n))
+
+
+
+    console.log(precosLimpos);
+  </script>
+</body>
+
+</html>
