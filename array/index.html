@@ -69,6 +69,17 @@
     console.log(carros2);
 
 
+    const aulas = [
+      { nome: 'HTML', min: 20 }, { nome: 'CSS', min: 10 }, { nome: 'JS', min: 30 }
+    ];
+
+    const listaAulas = aulas.reduce((acc, aula, index) => {
+      acc[index] = aula.nome;
+      return acc;
+    })
+
+    console.log(listaAulas);
+
   </script>
 </body>
 
