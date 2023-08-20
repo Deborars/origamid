@@ -44,6 +44,43 @@
     return { titulo: titulo, descricao: descricao, aulas: aulas, horas: horas }
   })
   console.log(arrCursos);
+
+
+  // Retorne o valor total das compras
+  const compras = [
+    {
+      item: 'Banana',
+      preco: 'R$ 4,99'
+    },
+    {
+      item: 'Ovo',
+      preco: 'R$ 2,99'
+    },
+    {
+      item: 'Carne',
+      preco: 'R$ 25,49'
+    },
+    {
+      item: 'Refrigerante',
+      preco: 'R$ 5,35'
+    },
+    {
+      item: 'Quejo',
+      preco: 'R$ 10,60'
+    }
+  ]
+
+  const precoLimpo = compras.map(preco => {
+    return preco.preco.replace("R$ ", '').replace(",", ".");
+  })
+
+  console.log(precoLimpo)
+
+  const total = precoLimpo.reduce((acc, preco, index) => {
+    return acc + parseFloat(preco)
+  }, 0)
+
+  console.log(total)
 </script>
 
 
