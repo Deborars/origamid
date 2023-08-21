@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    function Dom(seletor) {
+      this.element = document.querySelector(seletor);
+    };
+
+    Dom.prototype.ativo = function (classe) {
+      this.element.classList.add(classe);
+    };
+
+    const lista = new Dom('ul');
+    lista.ativo('ativar')
+    console.log(lista)
+  </script>
+</body>
+
+</html>
