@@ -1,11 +1,15 @@
 import React from 'react'
 
 
-function App() {
 
 
-  return <div>App Reacts</div>
-      
+
+const App = () =>{
+  const nome = Math.random();
+  return <p>{nome}</p>
 }
+
+      
+
 
 export default App
