@@ -30,7 +30,7 @@ body {
   grid-column: 3 / 5;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-color: #f15bb5;
+  background-color: #1b263b;
 }
 
 .menu ul {
@@ -78,7 +78,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
-  color: #9b5de5;
+  color: #1b263b;
 }
 
 .animais h2:before {
@@ -87,7 +87,7 @@ body {
   width: 40px;
   height: 10px;
   margin-right: 10px;
-  background-color: #70e000;
+  background-color: #1b263b;
 }
 
 .animais p {
@@ -111,7 +111,7 @@ body {
 }
 
 .animais-lista::-webkit-scrollbar-thumb {
-  background-color: #70e000;
+  background-color: #1b263b;
   border-left: 4px solid #faf6ed;
   border-right: 4px solid #faf6ed;
 }
@@ -133,7 +133,7 @@ body {
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: #9b5de5;
+  color: #1b263b;
   cursor: pointer;
 }
 
@@ -143,7 +143,7 @@ body {
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background-color: #70e000;
+  background-color: #1b263b;
 }
 
 .faq-lista dd {
@@ -171,13 +171,14 @@ body {
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background-color: #fee440;
+  background-color: #1b263b;
 }
 
 .copy {
   grid-column: 3/5;
   margin-bottom: 2rem;
-  background-color: #f15bb5;
+  background-color: #415a77;
+
 }
 
 .copy p {
