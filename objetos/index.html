@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Crie uma função que verifique
+    // corretamente o tipo de dado
+
+    function verificaTipo(param) {
+      return Object.prototype.toString.call(param)
+    }
+
+
+
+    // Crie um objeto quadrado com
+    // a propriedade lados e torne
+    // ela imutável
+
+    const quadrado = {
+      lados: 4
+    }
+
+    Object.freeze(quadrado)
+
+    // Previna qualquer mudança
+    // no objeto abaixo
+    const configuracao = {
+      width: 800,
+      height: 600,
+      background: '#333'
+    }
+
+    Object.freeze(configuracao);
+
+
+    // Liste o nome de todas
+    // as propriedades do
+    // protótipo de String e Array
+
+    Object.getOwnPropertyNames(String.prototype)
+    Object.getOwnPropertyNames(Array.prototype)
+
+  </script>
+</body>
+
+</html>
