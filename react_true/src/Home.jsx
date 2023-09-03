@@ -1,9 +1,10 @@
 import React from "react";
+import Titulo from "./Titulo.jsx";
 
 const Home = ()=>{
   return(
     <section>
-      <h2>Home</h2>
+      <Titulo texto='Home'/>
       <p>Essa é a home do site.</p>
     </section>
   )
