@@ -1,19 +1,28 @@
 import React from 'react';
+import Button from './src/Button'
 
 const App = ()=>{
 
-  const [arr, setArr] = React.useState(['Item 1', 'Item 2'])
+  const [valor, setValor ] = React.useState(1);
 
   function handleClick(){
-    setArr([...arr, 6] );
+    setValor(valor + 1)
   }
 
   return(
-    <div>
-      {arr.map((elem)=>(<li key={elem}>{elem}</li>))}
+    <>
+      <p>Valor: {valor}</p>
       <button onClick={handleClick}>Clique</button>
-    </div>
+      <Button/>
+    </>
   )
 }
 
 export default App;
+
+
+  // const [arr, setArr] = React.useState(['Item 1', 'Item 2'])
+
+  // const arr = React.useState(false);
+
+  
