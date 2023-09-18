@@ -34,3 +34,7 @@ Poderiamos utilizar um objeto e passar todos os campos do forumlario fazendo um 
 ## tela com os campos sem o fetch
 
 ![Alt text](image-3.png)
+
+Tela com os campos e sendo realizado um fetch usando a API do origamid
+
+![Alt text](image-4.png)
