@@ -1,30 +1,44 @@
 import React from 'react'
 
 
+
 function App() {
-  const [form, setForm] = React.useState({nome:'', email:''});
 
-
-  function handleSubmit (event){
-    event.preventDefault();
-  }
-
-  function handleChange(event){
-    const {id, value} = event.target;
-    setForm({...form ,[id]:value})
-  }
+    function handleSubmit (event){
+      event.preventDefault();
+    }
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="nome">Nome </label>
-        <input id="nome" type="text" value={form.nome} onChange={handleChange} />
-        {form.nome}
+      <form onSubmit={handleSubmit} >
+      <label htmlFor="nome">Nome </label>
+      <input type="text" name="nome" id="nome" value=''/>
 
-        <label htmlFor="email">Email </label>
-        <input id="email" type="email" value={form.email} onChange={handleChange} />
-        {form.email}
-        <button>Enviar</button>
+      <label htmlFor="email">Email </label>
+      <input type="email" name="email" id="email" value='' />
+
+      <label htmlFor="senha">Senha </label>
+      <input type="password" name="senha" id="senha" value='' />
+
+      <label htmlFor="cep">CEP </label>
+      <input type="text" name="cep" id="cep" value='' />
+
+      <label htmlFor="rua">Rua </label>
+      <input type="text" name="rua" id="rua" value='' />
+
+      <label htmlFor="numero">Número </label>
+      <input type="text" name="numero" id="numero" value='' />
+
+      <label htmlFor="bairro">Bairro </label>
+      <input type="text" name="bairro" id="bairro" value='' />
+
+      <label htmlFor="cidade">Cidade </label>
+      <input type="text" name="cidade" id="cidade" value='' />
+
+      <label htmlFor="estado">Estado </label>
+      <input type="text" name="estado" id="estado" value='' />
+
+      <button>Enviar</button>
       </form>
     </>
   )
