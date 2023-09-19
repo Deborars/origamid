@@ -21,7 +21,7 @@ const App = () => {
     <form>
       {coresArray.map((cor)=>(
         
-        <label>
+        <label key={cor}>
           <input
           type="checkbox"
           value={cor}
